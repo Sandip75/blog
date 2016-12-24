@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Angular 2 pipe and An npm module | Hackions-Blog</title>
+<link rel="stylesheet" href="https://hackions.github.io/blog//css/style.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/github.min.css">
+
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="https://hackions.github.io/blog/"><h1 class="title is-4">Hackions-Blog</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          
+          <a class="level-item" href="https://github.com/hackions">
+            <span class="icon">
+              <i class="fa fa-github"></i>
+            </span>
+          </a>
+          
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="subtitle is-6">December 25, 2016</h2>
+    <h1 class="title">Angular 2 pipe and An npm module</h1>
+    <div class="content">
+      
+
+<h2 id="angular-2-pipe-and-an-npm-module">&ldquo;Angular 2 pipe and An npm module&rdquo;</h2>
+
+<p>Few days ago , while working on a project which required around 200 names to be displayed at once and that too on a mobile screen &hellip;that&rsquo;s berzerk!!!</p>
+
+<p>So thought of letting the user enter the names rather than searching from giant list of hundreds so made a sweet input box and then thought of applying the filter like we do in Angular 1 using its pre-defined search filter&hellip;but wait I was working on Angular 2 and surprise surprise it doesnt has a pre-defined search filter like Angular 1 did ..bummed!!</p>
+
+<p>So thought lets make one then , i looked over the Angular 2 official docs and saw pipes(<em>_</em>)</p>
+
+<p>By the way a pipe is nothing just this | , Yes this is a pipe .</p>
+
+<p>So i dug little deeper and found PipeTransform implementing which i thought of making a filer for myself and offcourse for my project.</p>
+
+<p>So ng2-search filter was born which allowed to filter large list of names based on the character that user writes i.e.</p>
+
+<ul>
+<li>If you write letter &lsquo;q&rsquo; , then it will filter all the names having &lsquo;q&rsquo; in them so it totally solved my purpose.</li>
+</ul>
+
+<p>Demo Below,</p>
+
+<p><img src="http://i.imgur.com/dI5Mzvq.gif" alt="demo-image" /></p>
+
+<p>I then thought why not make it an open-source npm module , so i uploaded it on the ever-increasing npm global module repository consisting of lakhs of packages.</p>
+
+<p>Mine is called &ldquo;ng2-search-filter&rdquo;(<a href="https://www.npmjs.com/package/ng2-search-filter">https://www.npmjs.com/package/ng2-search-filter</a>).</p>
+
+<p>By the way , the module got 117 downloads in its first 14 hrs online .</p>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p>&copy; <a href="https://github.com/hackions">Hackions</a> 2016</p>
+  </div>
+</section>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/languages/go.min.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/languages/dockerfile.min.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
