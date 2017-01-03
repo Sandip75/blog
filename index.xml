@@ -7,8 +7,53 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/hackions&#34;&gt;Hackions&lt;/a&gt; 2016</copyright>
-    <lastBuildDate>Sun, 25 Dec 2016 01:55:50 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 03 Jan 2017 23:48:56 +0530</lastBuildDate>
     <atom:link href="https://hackions.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>What is an API?</title>
+      <link>https://hackions.github.io/blog/post/What-is-an-API/</link>
+      <pubDate>Tue, 03 Jan 2017 23:48:56 +0530</pubDate>
+      
+      <guid>https://hackions.github.io/blog/post/What-is-an-API/</guid>
+      <description>&lt;p&gt;One question that confuses most of the people at the time they begin their developer career
+is &amp;ldquo;what the heck is an API?&amp;rdquo;. This article is short explaination to &amp;ldquo;what&amp;rsquo;s an API and why we need it&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;../../images/api1.png&#34; alt=&#34;api&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Well , API stands for application programming interface , here the words that are given preference are
+application and interface , yes it&amp;rsquo;s just a piece of code that works between two application to help them
+interact with each other. For example : Imagine you are in a restaurant , consider API to be the waiter/waitress , who takes your order to the chef and then brings the food that chef prepared for you. The waiter acts as an interface between you and the chef.&lt;/p&gt;
+
+&lt;p&gt;Lets take another example , lets say you have a website that you coded on your own and you want google
+maps to be embedded in your site , what will you do to get google maps service on your site? Show
+your source code to google and wait for them to permit you to embed google maps in your site? Absolutely
+no.You will interact with google maps API which will take your request and in response will provide you
+with the maps.googlemaps API which acts as an interface between your source code and google maps.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;../../images/api2.jpg&#34; alt=&#34;api&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now lets discuss usefullness and other aspects of APIs.&lt;/p&gt;
+
+&lt;p&gt;First word that pop-up when API&amp;rsquo;s are involved is &amp;ldquo;protocols&amp;rdquo;. If I make a website and create an API for my site then I will have control of the data present on my site that I am sharing with other application that are trying to access the site. APIs are the guidelines between exchange of data from one program to another.I decide what to share and what not to.&lt;/p&gt;
+
+&lt;p&gt;This point also explains why API have a great hand in preventing ruthless web scraping.
+Apart from API builder point of view API are the unsung heroes behind the worlds connectivity.
+All sites in today&amp;rsquo;s world interact with each other with API and give you the desired content , like
+trivago , an online hotel price comparison site makes a request of price of a hotel that you searched
+to the APIs of all the travelling site , APIs of these travelling sites in response provide the prices of
+that hotel to trivago and trivago simply assembles the responses from each of those sites and present it to you.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;../../images/api3.png&#34; alt=&#34;api&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;API saves time , well how , lets see.
+Firstly , when you visit a website the page is in HTML , two web application does not communicate with each other using HTML views , its for humans , well they talk in a language that&amp;rsquo;s more convenient and faster to understand for them.
+These maybe plain text , json format , xml etc. Most applications communicate with each other in json and XML which ultimately result in faster processing of data between two apps.
+Secondly , it&amp;rsquo;s always cool to login different sites with your facebook/Google login details ,  well its all APIs running behind them.&lt;/p&gt;
+
+&lt;p&gt;Well that&amp;rsquo;s all , hope this help lots of developers to finally get into their mind &amp;ldquo;what&amp;rsquo;s an API ? &amp;rdquo; , thanks for reading.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Angular 2 pipe and An npm module</title>
@@ -16,11 +61,7 @@
       <pubDate>Sun, 25 Dec 2016 01:55:50 +0530</pubDate>
       
       <guid>https://hackions.github.io/blog/post/Angular-2-pipe-and-An-npm-module/</guid>
-      <description>
-
-&lt;h2 id=&#34;angular-2-pipe-and-an-npm-module&#34;&gt;&amp;ldquo;Angular 2 pipe and An npm module&amp;rdquo;&lt;/h2&gt;
-
-&lt;p&gt;Few days ago , while working on a project which required around 200 names to be displayed at once and that too on a mobile screen &amp;hellip;that&amp;rsquo;s berzerk!!!&lt;/p&gt;
+      <description>&lt;p&gt;Few days ago , while working on a project which required around 200 names to be displayed at once and that too on a mobile screen &amp;hellip;that&amp;rsquo;s berzerk!!!&lt;/p&gt;
 
 &lt;p&gt;So thought of letting the user enter the names rather than searching from giant list of hundreds so made a sweet input box and then thought of applying the filter like we do in Angular 1 using its pre-defined search filter&amp;hellip;but wait I was working on Angular 2 and surprise surprise it doesnt has a pre-defined search filter like Angular 1 did ..bummed!!&lt;/p&gt;
 
