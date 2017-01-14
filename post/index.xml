@@ -18,8 +18,6 @@
       <guid>https://hackions.github.io/blog/post/Buffers-In-NodeJS/</guid>
       <description>
 
-&lt;h1 id=&#34;buffers-in-nodejs&#34;&gt;Buffers In NodeJS&lt;/h1&gt;
-
 &lt;p&gt;Javascript works fine with strings and on their various operations but what about binary data consisting of bytes in which each byte is collection of 8bits that too in form of 0/1 &amp;hellip;It can&amp;rsquo;t help much so node&amp;rsquo;s buffer are here to your rescue.
 As all data in our computer is present in form of bytes , low-level operations like reading a file or working with sockets can&amp;rsquo;t be done alone with JS so.. Buffers are defined as container for raw bytes and it looks something like this..&lt;/p&gt;
 
