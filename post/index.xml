@@ -7,8 +7,69 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/hackions&#34;&gt;Hackions&lt;/a&gt; 2016</copyright>
-    <lastBuildDate>Tue, 03 Jan 2017 23:48:56 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 15 Jan 2017 00:29:55 +0530</lastBuildDate>
     <atom:link href="https://hackions.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Buffers In NodeJS</title>
+      <link>https://hackions.github.io/blog/post/Buffers-In-NodeJS/</link>
+      <pubDate>Sun, 15 Jan 2017 00:29:55 +0530</pubDate>
+      
+      <guid>https://hackions.github.io/blog/post/Buffers-In-NodeJS/</guid>
+      <description>
+
+&lt;h1 id=&#34;buffers-in-nodejs&#34;&gt;Buffers In NodeJS&lt;/h1&gt;
+
+&lt;p&gt;Javascript works fine with strings and on their various operations but what about binary data consisting of bytes in which each byte is collection of 8bits that too in form of 0/1 &amp;hellip;It can&amp;rsquo;t help much so node&amp;rsquo;s buffer are here to your rescue.
+As all data in our computer is present in form of bytes , low-level operations like reading a file or working with sockets can&amp;rsquo;t be done alone with JS so.. Buffers are defined as container for raw bytes and it looks something like this..&lt;/p&gt;
+
+&lt;p&gt;&amp;lt;Buffer 02 04 06 08 0a 0c 0e 10&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;Looks weird so lets dive in what above stuff actually is :-
+  - Buffer :- a buffer has an Object type of Buffer.
+  - Size:- Above is a size 8 buffer as it has 8 pairs of weird stuff and each        pair is a byte.&lt;/p&gt;
+
+&lt;p&gt;Hey , did i said wrong that byte are collection of 8bits then why above byte has 2 bits rather than 8 so lets see what it is actually ..&lt;/p&gt;
+
+&lt;p&gt;No - 2  Binary - 0001100  Hexadecimal - 0C
+So Smart Node Devs thought that why not save some space and adopt hexa form which takes less bits than Binary thats why above Buffer object had 2 bits instead of 8.&lt;/p&gt;
+
+&lt;h3 id=&#34;encoding-in-buffer&#34;&gt;Encoding In Buffer&lt;/h3&gt;
+
+&lt;p&gt;Code :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;const buf = Buffer.from([0x68, 0x65, 0x6c, 0x6c, 0x6f, 0x20, 0x77, 0x6f, 0x72,
+ 0x6c, 0x64]);
+ /*converts the array into a Buffer object .So it reads hey create a buffer from this array and return to buf constant.*/
+
+console.log(buf);
+// outputs &amp;lt;Buffer 68 65 6c 6c 6f 20 77 6f 72 6c 64&amp;gt;
+
+console.log(buf.toString(&#39;utf8&#39;));
+// outputs &#39;hello world&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Various Commonly Used Encoding Types:-
+  - UTF-8 - Includes ASCII&amp;rsquo;s (0-127) characters along with its own set and all start with 1 to avoid clashing with ASCII.
+  - UTF-16 -Capable of encoding all Unicode character and encoding is of variable lenght rest google it fella :)&lt;/p&gt;
+
+&lt;p&gt;So selecting the type of encoding can be like north and south when specially working with buffers along with other stuff.&lt;/p&gt;
+
+&lt;p&gt;In Above Example :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;console.log(buff.toString(&#39;utf16le&#39;));
+//outputs &#39;敨汬⁯潷汲&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Encoding is a Bi-directional process thus converting a string to buffer and vice-versa.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Conceptually buffers are quite similar to arrays. They use bracket indexing and assignment just like arrays, and they have a length property as well as a concat and a slice method that works in basically the same way as arrays. However unlike javascript arrays, javascript buffers have a fixed length.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;To Explore more kindly refer to the awesome &lt;a href=&#34;https://nodejs.org/api/buffer.html&#34;&gt;Node.js&lt;/a&gt; docs.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>What is an API?</title>
