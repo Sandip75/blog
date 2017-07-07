@@ -1,0 +1,16 @@
+baseurl = "https://hackions.github.io/blog/"
+languageCode = "en-us"
+title = "Hackions-Blog"
+theme = "hemingway"
+copyright = "&copy; <a href=\"https://github.com/hackions\">Hackions</a> 2016"
+
+[params]
+author = "T K Sourabh"
+
+[params.highlight]
+style = "github"
+languages = ["go", "dockerfile"]
+
+[[params.social]]
+url = "https://github.com/hackions"
+fa_icon = "fa-github"
