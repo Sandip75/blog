@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://hackions.github.io/blog/post/Buffers-In-NodeJS/</loc>
+    <loc>https://hackions.github.io/blog/post/resource/</loc>
+    <lastmod>2017-09-11T19:11:53+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hackions.github.io/blog/post/buffers-in-nodejs/</loc>
     <lastmod>2017-01-15T00:29:55+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://hackions.github.io/blog/post/What-is-an-API/</loc>
+    <loc>https://hackions.github.io/blog/post/what-is-an-api/</loc>
     <lastmod>2017-01-03T23:48:56+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://hackions.github.io/blog/post/Angular-2-pipe-and-An-npm-module/</loc>
+    <loc>https://hackions.github.io/blog/post/angular-2-pipe-and-an-npm-module/</loc>
     <lastmod>2016-12-25T01:55:50+05:30</lastmod>
   </url>
   
@@ -22,14 +28,24 @@
   </url>
   
   <url>
+    <loc>https://hackions.github.io/blog/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hackions.github.io/blog/</loc>
-    <lastmod>2017-01-15T00:29:55+05:30</lastmod>
+    <lastmod>2017-09-11T19:11:53+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://hackions.github.io/blog/post/</loc>
-    <lastmod>2017-01-15T00:29:55+05:30</lastmod>
+    <lastmod>2017-09-11T19:11:53+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hackions.github.io/blog/tags/</loc>
     <priority>0</priority>
   </url>
   
