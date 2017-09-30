@@ -33,7 +33,9 @@ This post is a frequently updated list for resources shared on hackions group. P
 
 ## Android
 
-- [Android Programming](https://www.coursera.org/learn/android-programming)
+- [Android Programming](http://www.viralandroid.com/2015/11/android-tutorial.html)
+- [Android using kotlin ](https://kotlinlang.org/docs/tutorials/kotlin-android.html)
+- [Android ](http://www.zoftino.com/android)
 
 ## Programming and Interview
 
